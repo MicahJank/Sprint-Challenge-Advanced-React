@@ -4,6 +4,7 @@ import './App.css';
 import axios from 'axios';
 
 import PlayerList from './components/PlayersList.js';
+import DarkMode from './components/DarkMode.js';
 
 class App extends React.Component {
 
@@ -25,7 +26,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
-          <PlayerList players={this.state.playersData} />
+        <DarkMode />
+        <PlayerList players={this.state.playersData} />
       </div>
     );
   }
