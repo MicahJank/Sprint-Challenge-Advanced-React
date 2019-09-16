@@ -4,6 +4,7 @@ import { makeStyles, FormGroup, FormControlLabel, Switch } from '@material-ui/co
 
 import { useDarkMode } from './hooks/useDarkMode.js';
 
+
 const DarkMode = () => {
 
     const [darkMode, setDarkMode] = useDarkMode(false);
