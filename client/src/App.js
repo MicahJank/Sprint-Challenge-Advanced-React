@@ -11,7 +11,6 @@ class App extends React.Component {
     playersData: {}
   }
 
-
   componentDidMount() {
     axios.get(`http://localhost:5000/api/players`)
       .then(res => {
@@ -24,7 +23,6 @@ class App extends React.Component {
 
   render() {
 
-    console.log(this.state.playersData);
     return (
       <div className="App">
           <PlayerList players={this.state.playersData} />
